@@ -81,7 +81,8 @@ class HybridSearchSystem:
         # Sort by final scores
         return sorted(scores.keys(), key=lambda x: scores[x], reverse=True)
     
-    def _truncate_text(self, text: str, max_chars: int = 2000) -> str:
+    # To truncate the LLM's input to a maximum number of characters
+    def _truncate_text(self, text: str, max_chars: int = 5000) -> str:
         """Helper function to truncate text to a maximum number of characters."""
         return text if len(text) <= max_chars else text[:max_chars] + "..."
     
@@ -108,10 +109,10 @@ class HybridSearchSystem:
                 ids=[doc_id],
                 include=['documents', 'metadatas']
             )
-            truncated_content = self._truncate_text(chroma_result['documents'][0], max_chars=2000)
+            # truncated_content = self._truncate_text(chroma_result['documents'][0], max_chars=2000)
             final_results.append({
-                'content': truncated_content,
-                # 'content': chroma_result['documents'][0],
+                # 'content': truncated_content,
+                'content': chroma_result['documents'][0],
                 'source': chroma_result['metadatas'][0]['source'],
                 'chunk_id': doc_id
             })

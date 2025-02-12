@@ -261,7 +261,7 @@ def main():
         print("Document indexing completed")
         
         # Example query
-        query = "What is the main topic of the documents?"
+        query = "What are the different joins present in Spark?"
         print(f"Running query: {query}")
         results = system.search(query)
         
