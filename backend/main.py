@@ -1,5 +1,5 @@
-from .hybrid_search import HybridSearchSystem
-from .config import Config
+from hybrid_search import HybridSearchSystem
+from config import Config
 
 def main():
     # Configuration

@@ -17,7 +17,7 @@ class DocumentProcessor:
                 text += page.extract_text() + ' '
         return text.strip()
     
-    def create_contextual_chunks(self, text: str, chunk_size: int = 512) -> List[Dict[str, str]]:
+    def create_contextual_chunks(self, text: str, chunk_size: int = 128) -> List[Dict[str, str]]:
         """Create chunks with surrounding context."""
         sentences = sent_tokenize(text)
         chunks = []
