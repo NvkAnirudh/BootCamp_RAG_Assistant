@@ -17,6 +17,10 @@ def build_context(search_results: List[Dict[str, Any]]) -> str:
     """Build a context string from search results."""
     return "\n\n".join([f"Source: {res['source']}\nContent: {res['content']}" for res in search_results])
 
+@app.get("/")
+def read_root():
+    return {"message": "Hello, World!"}
+
 @app.post("/chat")
 async def chat_endpoint(request: ChatRequest):
     try:
