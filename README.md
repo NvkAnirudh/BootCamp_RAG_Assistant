@@ -4,6 +4,8 @@ This project builds a Retrieval-Augmented Generation (RAG) system that allows us
 Bootcamp. This system leverages transcripts from the bootcamp videos (stored into 39 PDFs) and enables users to interact with the content using an 
 OpenAI-powered (o1-mini) chatbot with contextual retrieval. The combined transcripts amount to roughly 700,000 tokens.
 
+> **_Note_** This repository does not include transcripts; it is intended for users who already have their own BootCamp transcripts.
+
 ## Table of Contents
 - [Demo](#demo)
 - [Architecture Overview](#architecture-overview)
@@ -133,7 +135,7 @@ From the root directory, run:
 ```
 uvicorn backend.api:app --reload
 ```
-Note: The --reload flag is required during development so that the server automatically restarts on code changes.
+> **_Note_** The --reload flag is required during development so that the server automatically restarts on code changes.
 ### Run the Frontend
 Open a new terminal and run:
 ```
