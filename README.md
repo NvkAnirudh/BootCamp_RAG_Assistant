@@ -179,6 +179,10 @@ Consider adding authentication to manage access, especially if you plan to deplo
 ## License
 This project is licensed under the [MIT License](https://github.com/NvkAnirudh/BootCamp_RAG_Assistant/blob/main/LICENSE).
 
-   
+## References
+[Data Expert, by Zach Wilson](https://www.dataexpert.io/)
+[Anthropic's Contextual Retrieval](https://www.anthropic.com/news/contextual-retrieval)
+[Anthropic's Cookbook](https://github.com/anthropics/anthropic-cookbook/blob/main/skills/contextual-embeddings/guide.ipynb)
+[OpenAI's o1 Suite](https://platform.openai.com/docs/models#o1)
    
    
