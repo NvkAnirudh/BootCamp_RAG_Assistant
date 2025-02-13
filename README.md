@@ -175,7 +175,7 @@ Package the application into Docker containers and deploy it on a cloud platform
 Consider adding authentication to manage access, especially if you plan to deploy the application publicly.
 
 ## License
-This project is licensed under the MIT License.
+This project is licensed under the [MIT License](https://github.com/NvkAnirudh/BootCamp_RAG_Assistant/blob/main/LICENSE).
 
    
    
